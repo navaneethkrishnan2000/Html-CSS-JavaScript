@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #A34343;
+}
+
+.container{
+    max-width: 500px;
+    background: #E9C874;
+    border-radius: 10px;
+    padding: 20px 25px 15px;
+}
+
+header h1{
+    text-align: center;
+    margin-bottom: 7px;
+    font-size: 27px;
+    font-weight: 550;
+}
+
+header p {
+    margin-top: 7px;
+    font-size: 15px;
+    color: #8B322C;
+    font-weight: 500;
+    text-align: center;
+}
+
+.input{
+    margin: 20px 0;
+}
+
+.input input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid darkred;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.input input:focus{
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.24);
+}
+
+.input button{
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 0px ;
+    margin-top: 20px ;
+    border-radius: 5px;
+    border: 1px solid darkred;
+    background-color: darkred;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    opacity: .5;
+    pointer-events: none;
+}
+
+.input button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.input button:hover{
+    transition-duration: 500ms;
+    box-shadow: 0 8px 16px 5px rgba(0,0,0,0.24); 
+}
+
+.info-text{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 550;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.info-text span{
+    color: darkred;
+}
